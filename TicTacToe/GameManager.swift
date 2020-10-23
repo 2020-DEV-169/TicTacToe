@@ -24,10 +24,13 @@ class GameManager {
     }
 
     @discardableResult func mark(row: Int, column: Int) -> Grid.Mark? {
-        guard case .turn(let currentPlayer) = self.state,
-              let mark = self.grid.mark(row: row, column: column, by: currentPlayer) else {
+        guard
+            case .turn(let currentPlayer) = self.state,
+            let mark = self.grid.mark(row: row, column: column, by: currentPlayer)
+        else {
             return nil
         }
+
         switch self.grid.result {
         case .undefined:
             self.state = .turn(of: currentPlayer.nextPlayer)

@@ -13,13 +13,13 @@
 		8F50010B2543067E00947164 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50010A2543067E00947164 /* Constants.swift */; };
 		8F50011025430B7D00947164 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50010F25430B7D00947164 /* Grid.swift */; };
 		8F5001152543137F00947164 /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5001142543137F00947164 /* GridTests.swift */; };
+		8F50011F2543278C00947164 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50011E2543278C00947164 /* ViewModelTests.swift */; };
 		DD18C11A2540A65100A8F89F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C1192540A65100A8F89F /* AppDelegate.swift */; };
 		DD18C11C2540A65100A8F89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C11B2540A65100A8F89F /* SceneDelegate.swift */; };
 		DD18C11E2540A65100A8F89F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C11D2540A65100A8F89F /* ViewController.swift */; };
 		DD18C1212540A65100A8F89F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18C11F2540A65100A8F89F /* Main.storyboard */; };
 		DD18C1232540A65300A8F89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD18C1222540A65300A8F89F /* Assets.xcassets */; };
 		DD18C1262540A65300A8F89F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18C1242540A65300A8F89F /* LaunchScreen.storyboard */; };
-		DD18C1312540A65300A8F89F /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C1302540A65300A8F89F /* TicTacToeTests.swift */; };
 		DD18C14D2540AEED00A8F89F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C14C2540AEED00A8F89F /* ViewModel.swift */; };
 		DD18C1522540B1B600A8F89F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18C1512540B1B600A8F89F /* Button.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 		8F50010A2543067E00947164 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F50010F25430B7D00947164 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		8F5001142543137F00947164 /* GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
+		8F50011E2543278C00947164 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		DD18C1162540A65100A8F89F /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD18C1192540A65100A8F89F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD18C11B2540A65100A8F89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		DD18C1252540A65300A8F89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD18C1272540A65300A8F89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD18C12C2540A65300A8F89F /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD18C1302540A65300A8F89F /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		DD18C1322540A65300A8F89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD18C14C2540AEED00A8F89F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DD18C1512540B1B600A8F89F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -100,14 +100,14 @@
 				DD18C11B2540A65100A8F89F /* SceneDelegate.swift */,
 				DD18C11D2540A65100A8F89F /* ViewController.swift */,
 				DD18C14C2540AEED00A8F89F /* ViewModel.swift */,
+				8F5001002543054C00947164 /* GameManager.swift */,
+				8F50010F25430B7D00947164 /* Grid.swift */,
 				8F500105254305ED00947164 /* Player.swift */,
 				DD18C1512540B1B600A8F89F /* Button.swift */,
 				DD18C11F2540A65100A8F89F /* Main.storyboard */,
 				DD18C1222540A65300A8F89F /* Assets.xcassets */,
 				DD18C1242540A65300A8F89F /* LaunchScreen.storyboard */,
 				DD18C1272540A65300A8F89F /* Info.plist */,
-				8F5001002543054C00947164 /* GameManager.swift */,
-				8F50010F25430B7D00947164 /* Grid.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -115,10 +115,10 @@
 		DD18C12F2540A65300A8F89F /* TicTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD18C1302540A65300A8F89F /* TicTacToeTests.swift */,
-				DD18C1322540A65300A8F89F /* Info.plist */,
+				8F50011E2543278C00947164 /* ViewModelTests.swift */,
 				8F5000F82543050D00947164 /* GameManagerTests.swift */,
 				8F5001142543137F00947164 /* GridTests.swift */,
+				DD18C1322540A65300A8F89F /* Info.plist */,
 			);
 			path = TicTacToeTests;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD18C1312540A65300A8F89F /* TicTacToeTests.swift in Sources */,
 				8F5001152543137F00947164 /* GridTests.swift in Sources */,
+				8F50011F2543278C00947164 /* ViewModelTests.swift in Sources */,
 				8F5000F92543050D00947164 /* GameManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

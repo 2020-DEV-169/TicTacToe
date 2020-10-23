@@ -48,14 +48,6 @@ class Grid {
         }()
     }
 
-    func createButtons() -> [[Button]] {
-        self.marks.enumerated().map { (row, columns) in
-            columns.enumerated().map { (column, mark) in
-                Button(row: row, column: column)
-            }
-        }
-    }
-
     @discardableResult func mark(row: Int, column: Int, by player: Player) -> Mark? {
         guard self.marks[row][column] == .empty else {
             return nil

@@ -15,9 +15,10 @@ class ViewModel {
         }
     }
     
-    init() {
-        self.gameManager = GameManager()
+    init(gameManager: GameManager = GameManager()) {
+        self.gameManager = gameManager
     }
+
     var onUpdate: (() -> Void)? {
         didSet {
             self.onUpdate?()
@@ -34,7 +35,11 @@ class ViewModel {
         }
     }
     var buttons: [[Button]] {
-        return self.gameManager.grid.createButtons()
+        self.gameManager.grid.marks.enumerated().map { (row, columns) in
+            columns.enumerated().map { (column, _) in
+                Button(row: row, column: column)
+            }
+        }
     }
 
     func titleForMarking(row: Int, column: Int) -> String? {
@@ -46,6 +51,7 @@ class ViewModel {
     }
 
     func clearGame() {
+        // Create a new GameManager instance
         self.gameManager = GameManager()
     }
 }

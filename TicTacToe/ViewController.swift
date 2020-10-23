@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewModel.onUpdate = self.updateView
+        self.viewModel.onUpdate = { [weak self] in self?.updateView() }
         self.setupGame()
     }
     
